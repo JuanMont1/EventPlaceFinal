@@ -1,0 +1,97 @@
+.foro-eventos-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.foro-title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.event-select {
+  margin-bottom: 20px;
+}
+
+.post-form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.post-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.post-submit-btn {
+  margin-top: 10px;
+}
+
+.post-card {
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.post-author {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.post-content {
+  margin-bottom: 15px;
+}
+
+.reaction-btn {
+  margin-right: 10px;
+}
+
+.destacado-badge {
+  margin-left: 10px;
+}
+
+.comment-btn {
+  margin-left: 10px;
+}
+
+.post-actions {
+  float: right;
+}
+
+.comment-modal .modal-body {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.comment-card {
+  margin-bottom: 10px;
+}
+
+.comment-author {
+  font-size: 0.9em;
+  color: #6c757d;
+}
+
+.new-comment-form {
+  margin-top: 20px;
+}
+
+.edit-cancel-btn {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .foro-eventos-container {
+    padding: 10px;
+  }
+
+  .post-card {
+    margin-bottom: 15px;
+  }
+
+  .reaction-btn, .comment-btn {
+    padding: 5px 10px;
+    font-size: 0.9em;
+  }
+}

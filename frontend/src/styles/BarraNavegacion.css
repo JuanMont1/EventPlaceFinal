@@ -1,0 +1,192 @@
+.barra-personalizada {
+  width: 100%;
+  height: 200px;
+  background: url("../archivos/img/fondo.jpg") top/cover no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 20px;
+  transition: height 0.3s ease-in-out;
+}
+
+.barra-personalizada::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.barra-personalizada * {
+  position: relative;
+  z-index: 2;
+  color: white !important;
+}
+
+.logo-barra {
+  width: 150px;
+  height: auto;
+  transition: width 0.3s ease;
+}
+
+.logo-barra.con-scroll {
+  width: 150px;
+}
+
+.barra-personalizada.con-scroll {
+  height: 130px;
+}
+
+.alineacion-items {
+  display: flex;
+  align-items: center;
+}
+
+.seccion-usuario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+.icono-usuario {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nombre-usuario {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.enlace-perfil {
+  font-size: 14px;
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.enlace-perfil:hover {
+  text-decoration: underline;
+}
+
+.busqueda-seccion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: transparent;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.icono-busqueda {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.icono-busqueda:hover {
+  transform: scale(1.2);
+}
+
+.input-busqueda {
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  width: 200px;
+}
+
+.btn-iniciar-sesion {
+  background-color: transparent !important;
+  border: 2px solid white !important;
+  color: white !important;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-iniciar-sesion:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.btn-iniciar-sesion:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+  outline: none !important;
+}
+
+.btn-iniciar-sesion:active {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+@media (max-width: 992px) {
+  .barra-personalizada {
+    height: auto;
+    padding: 10px 10px 0;
+    flex-direction: column;
+  }
+
+  .logo-barra {
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .seccion-usuario {
+    justify-content: center;
+    padding-right: 0;
+    margin-left: 0;
+  }
+
+  .busqueda-seccion {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .barra-personalizada {
+    height: 150px;
+    padding: 5px;
+  }
+
+  .logo-barra {
+    height: 50px;
+  }
+
+  .seccion-usuario {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-right: 0;
+  }
+
+  .input-busqueda {
+    width: 150px;
+  }
+
+  .nombre-usuario {
+    display: none;
+  }
+}
+
+
+.navbar-nav .dropdown-item {
+  color: green !important;
+}
+
+.navbar-nav .dropdown-item:hover {
+  color: darkgreen !important;
+}
+

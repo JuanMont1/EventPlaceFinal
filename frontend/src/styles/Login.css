@@ -1,0 +1,166 @@
+/* === Contenedor Principal === */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+  }
+  
+  /* === Caja de Login === */
+  .login-box {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* === Logo === */
+  .login-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 180px;
+  }
+  
+  /* === Títulos === */
+  .login-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #065f46;
+    margin: 2rem 0 0.25rem;
+  }
+  
+  .login-subtitle {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+  }
+  
+  /* === Formulario === */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .login-form label {
+    font-size: 0.85rem;
+    color: #374151;
+    margin-left: 0.25rem;
+  }
+  
+  .login-form input {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .login-form input:focus {
+    border-color: #059669;
+  }
+  
+  /* === Botones === */
+  .login-btn,
+  .google-btn,
+  .side-register-btn {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+  }
+  
+  .login-btn {
+    background-color: #065f46;
+    color: white;
+    margin-top: 0.5rem;
+  }
+  
+  .login-btn:hover {
+    background-color: #047857;
+  }
+  
+  .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: white;
+    border: 1px solid #d1d5db;
+    margin-left: 40px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .google-btn:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .side-register-btn {
+    position: absolute;
+    bottom: 50%;
+    right: 680px;
+    transform: translateY(50%) rotate(90deg);
+    background-color: #065f46;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .side-register-btn:hover {
+    background-color: #047857;
+  }
+  
+  /* === Iconos === */
+  .google-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* === Enlaces y textos pequeños === */
+  .forgot-password,
+  .register {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .forgot-password a,
+  .register a {
+    color: #065f46;
+    text-decoration: underline;
+  }
+  
+  /* === Divider === */
+  .divider {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #9ca3af;
+  }
+  
+  /* === Animación de salida === */
+  .fade-out {
+    animation: fadeOut 0.5s forwards;
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+  }
+  

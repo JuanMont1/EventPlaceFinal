@@ -1,0 +1,129 @@
+.todos-los-anuncios {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f8f1;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.anuncios-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #27ae60;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.btn-volver {
+  background-color: #ffffff;
+  color: #27ae60;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-volver:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  flex-grow: 1;
+  font-size: 2.5em;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.anuncios-container {
+  background-color: #f0f8f1;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.anuncios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.anuncio-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(39, 174, 96, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 2px solid #27ae60;
+}
+
+.anuncio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(39, 174, 96, 0.2);
+}
+
+.anuncio-icono {
+  background-color: #27ae60;
+  color: white;
+  font-size: 36px;
+  padding: 20px;
+  text-align: center;
+}
+
+.anuncio-contenido {
+  padding: 25px;
+}
+
+.anuncio-contenido h3 {
+  color: #27ae60;
+  margin-top: 0;
+  font-size: 1.5em;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.anuncio-contenido p {
+  color: #333;
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.anuncio-fecha {
+  color: #666;
+  font-size: 0.9em;
+  font-style: italic;
+  display: block;
+  text-align: right;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .anuncios-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .btn-volver {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 2em;
+  }
+
+  .anuncios-grid {
+    grid-template-columns: 1fr;
+  }
+}

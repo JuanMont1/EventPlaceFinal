@@ -1,0 +1,90 @@
+.pie {
+  display: flex;
+  justify-content: space-between;
+  background: url("../archivos/img/fondo.jpg") center/cover no-repeat;
+  color: #ffffff;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.pie::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 100, 0, 0.8);
+  z-index: 1;
+}
+
+.seccion-pie, .centro-pie {
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.logo-pie {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.iconos-redes-pie {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.iconos-redes-pie a {
+  color: #ffffff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.iconos-redes-pie a:hover {
+  color: #90EE90;
+}
+
+.titulo-pie {
+  margin-bottom: 15px;
+  color: #90EE90;
+}
+
+.lista-pie {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+.item-lista-pie {
+  margin-bottom: 10px;
+}
+
+.enlace-pie {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.enlace-pie:hover {
+  color: #90EE90;
+}
+
+.seccion-pie i {
+  margin-right: 10px;
+  color: #90EE90;
+}
+
+@media (max-width: 768px) {
+  .pie {
+    flex-direction: column;
+  }
+
+  .seccion-pie, .centro-pie {
+    margin-bottom: 20px;
+  }
+}

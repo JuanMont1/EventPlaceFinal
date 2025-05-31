@@ -1,0 +1,118 @@
+.calendario-mes-section {
+  margin: 40px 0 0 0;
+  padding: 0 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendario-mes-title {
+  color: #009e60;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+}
+
+.calendario-mes-box {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 32px 24px;
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.calendario-mes-col {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1;
+  min-width: 320px;
+}
+
+.calendario-mes-evento {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.calendario-mes-fecha {
+  border: 3px solid #00b894;
+  border-radius: 10px;
+  width: 64px;
+  min-width: 64px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  background: #f8f8f8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.calendario-mes-fecha-mes {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff;
+  background: #00b894;
+  border-radius: 7px 7px 0 0;
+  width: 100%;
+  text-align: center;
+  padding: 2px 0 1px 0;
+  letter-spacing: 1px;
+}
+
+.calendario-mes-fecha-dia {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.calendario-mes-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.calendario-mes-titulo {
+  font-weight: 700;
+  font-size: 1.08rem;
+  margin-bottom: 2px;
+}
+
+.calendario-mes-desc {
+  color: #444;
+  font-size: 0.97rem;
+  margin-bottom: 4px;
+}
+
+.calendario-mes-lugar {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background: #009e60;
+  border-radius: 6px;
+  padding: 2px 12px 2px 8px;
+  margin-top: 2px;
+  width: fit-content;
+}
+
+@media (max-width: 900px) {
+  .calendario-mes-box {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 8px;
+  }
+  .calendario-mes-col {
+    min-width: 0;
+  }
+}
